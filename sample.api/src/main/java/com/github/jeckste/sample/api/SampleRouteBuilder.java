@@ -27,7 +27,7 @@ public class SampleRouteBuilder extends RouteBuilder {
             .route()
             .process(ex -> {
                 PingResponse response = new PingResponse();
-                response.setMessage("Hello world");
+                response.setMessage("Hello world 2");
                 response.setEnvironment(System.getenv("ENVIRONMENT"));
                 ex.getOut().setBody(response);
             });
